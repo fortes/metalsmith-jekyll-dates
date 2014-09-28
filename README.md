@@ -25,3 +25,9 @@ After
   }
 }
 ```
+
+## See Also
+
+If this doesn't do what you want it to, look at:
+
+* [Metalsmith Mallet](https://github.com/aigarsdz/metalsmith-mallet)
