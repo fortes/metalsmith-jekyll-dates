@@ -19,8 +19,13 @@ module.exports = function(options) {
         continue;
       }
 
-      files[file].date = match[1] + '-' + match[2] + '-' + match[3];
-      files[file].slug = match[4];
+      if (!('date' in files[file])) {
+        files[file].date = match[1] + '-' + match[2] + '-' + match[3];
+      }
+
+      if (!('slug' in files[file])) {
+        files[file].slug = match[4];
+      }
     }
 
     done();

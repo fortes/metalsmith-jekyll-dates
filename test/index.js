@@ -4,6 +4,11 @@ var assert = require('assert'),
 var files = {
   'ignored.md': {contents: new Buffer('Ignore')},
   '2000-10-15-my-post.md': {contents: new Buffer('Ignore')},
+  '2000-10-15-overwrite.md': {
+    date: 'foo',
+    slug: 'bar',
+    contents: new Buffer('Ignore')
+  },
   '2000-10-15-no-extension': {contents: new Buffer('Ignore')}
 };
 
@@ -25,6 +30,18 @@ plugin(files, {}, function() {
     files['2000-10-15-my-post.md'].slug,
     'my-post',
     'Slug extracted'
+  );
+
+  // Don't clobber existing data
+  assert.equal(
+    files['2000-10-15-overwrite.md'].date,
+    'foo',
+    'Original date preserved'
+  );
+  assert.equal(
+    files['2000-10-15-overwrite.md'].slug,
+    'bar',
+    'Original slug preserved'
   );
 
   console.log('All tests passed.')
