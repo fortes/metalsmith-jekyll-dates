@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-jeykll-dates",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Metalsmith plugin to extract date and slug from Jekyll-style filenames",
   "main": "index.js",
   "scripts": {
