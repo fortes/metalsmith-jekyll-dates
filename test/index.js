@@ -22,8 +22,8 @@ plugin(files, {}, function() {
 
   // Filename match
   assert.equal(
-    files['2000-10-15-my-post.md'].date,
-    '2000-10-15',
+    files['2000-10-15-my-post.md'].date.toDateString(),
+    'Sun Oct 15 2000',
     'Correct date extracted'
   );
   assert.equal(

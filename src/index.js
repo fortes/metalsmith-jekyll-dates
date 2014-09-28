@@ -20,7 +20,7 @@ module.exports = function(options) {
       }
 
       if (!('date' in files[file])) {
-        files[file].date = match[1] + '-' + match[2] + '-' + match[3];
+        files[file].date = new Date(match[1], match[2] - 1, match[3], 12);
       }
 
       if (!('slug' in files[file])) {
