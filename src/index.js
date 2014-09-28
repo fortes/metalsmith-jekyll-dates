@@ -19,8 +19,8 @@ module.exports = function(options) {
         continue;
       }
 
-      file.date = new Date(match[1], match[2] - 1, match[3], 12, 0, 0, 0, 0);
-      file.slug = match[4];
+      files[file].date = match[1] + '-' + match[2] + '-' + match[3];
+      files[file].slug = match[4];
     }
 
     done();
