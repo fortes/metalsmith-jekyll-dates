@@ -30,4 +30,5 @@ After
 
 If this doesn't do what you want it to, look at:
 
+* [Metalsmith Date in Filename](https://github.com/sanx/metalsmith-date-in-filename): Seems to be a superset of this plugin, was released after this plugin.
 * [Metalsmith Mallet](https://github.com/aigarsdz/metalsmith-mallet)
