@@ -1,4 +1,4 @@
-# metalsmith-jekyll-dates
+# metalsmith-jekyll-dates [![build status](https://travis-ci.org/fortes/metalsmith-jekyll-dates.svg?branch=master)](https://travis-ci.org/fortes/metalsmith-jekyll-dates/)
 
 Adds `date` and `slug` metadata to files that have Jekyll-style filenames.
 
