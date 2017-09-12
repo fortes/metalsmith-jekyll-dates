@@ -1,5 +1,5 @@
 var assert = require('assert'),
-    plugin = require('../src/index')({});
+    plugin = require('./index')({});
 
 var files = {
   'ignored.md': {contents: new Buffer('Ignore')},
