@@ -1,3 +1,7 @@
+# No longer maintained
+
+This is no longer maintained, code is archived and available for forking though.
+
 # metalsmith-jekyll-dates [![build status](https://travis-ci.org/fortes/metalsmith-jekyll-dates.svg?branch=master)](https://travis-ci.org/fortes/metalsmith-jekyll-dates/)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/fortes/metalsmith-jekyll-dates.svg)](https://greenkeeper.io/)
